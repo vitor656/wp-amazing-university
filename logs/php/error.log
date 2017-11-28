@@ -1,0 +1,78 @@
+[24-Nov-2017 22:34:31 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[24-Nov-2017 22:34:32 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[24-Nov-2017 22:34:34 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[24-Nov-2017 22:34:35 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[24-Nov-2017 22:34:37 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[24-Nov-2017 22:34:37 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[24-Nov-2017 22:35:33 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[24-Nov-2017 23:11:08 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 3 and at least 2 expected in /app/public/wp-includes/plugin.php:398
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/functions.php(3): add_action()
+#1 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-blog-header.php(13): require_once('/app/public/wp-...')
+#5 /app/public/index.php(17): require('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 398
+[24-Nov-2017 23:11:12 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 3 and at least 2 expected in /app/public/wp-includes/plugin.php:398
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/functions.php(3): add_action()
+#1 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-blog-header.php(13): require_once('/app/public/wp-...')
+#5 /app/public/index.php(17): require('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 398
+[24-Nov-2017 23:11:13 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 3 and at least 2 expected in /app/public/wp-includes/plugin.php:398
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/functions.php(3): add_action()
+#1 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-blog-header.php(13): require_once('/app/public/wp-...')
+#5 /app/public/index.php(17): require('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 398
+[24-Nov-2017 23:11:13 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 3 and at least 2 expected in /app/public/wp-includes/plugin.php:398
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/functions.php(3): add_action()
+#1 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-blog-header.php(13): require_once('/app/public/wp-...')
+#5 /app/public/index.php(17): require('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 398
+[24-Nov-2017 23:11:14 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 3 and at least 2 expected in /app/public/wp-includes/plugin.php:398
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/functions.php(3): add_action()
+#1 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-blog-header.php(13): require_once('/app/public/wp-...')
+#5 /app/public/index.php(17): require('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 398
+[24-Nov-2017 23:11:14 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 3 and at least 2 expected in /app/public/wp-includes/plugin.php:398
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/functions.php(3): add_action()
+#1 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-blog-header.php(13): require_once('/app/public/wp-...')
+#5 /app/public/index.php(17): require('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 398
+[24-Nov-2017 23:11:14 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 3 and at least 2 expected in /app/public/wp-includes/plugin.php:398
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/functions.php(3): add_action()
+#1 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-blog-header.php(13): require_once('/app/public/wp-...')
+#5 /app/public/index.php(17): require('/app/public/wp-...')
+#6 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 398
+[28-Nov-2017 14:02:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'function_to_add' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286

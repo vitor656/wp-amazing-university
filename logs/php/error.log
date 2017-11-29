@@ -76,3 +76,20 @@ Stack trace:
 #6 {main}
   thrown in /app/public/wp-includes/plugin.php on line 398
 [28-Nov-2017 14:02:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'function_to_add' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286
+[29-Nov-2017 16:19:04 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function pageBanner(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/page.php on line 7 and exactly 1 expected in /app/public/wp-content/themes/fictional-university-theme/functions.php:3
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/page.php(7): pageBanner()
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 3
+[29-Nov-2017 16:19:06 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function pageBanner(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/page.php on line 7 and exactly 1 expected in /app/public/wp-content/themes/fictional-university-theme/functions.php:3
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/page.php(7): pageBanner()
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 3
+[29-Nov-2017 18:48:57 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /app/public/wp-content/themes/fictional-university-theme/single-program.php on line 116

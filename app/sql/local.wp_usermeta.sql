@@ -28,4 +28,8 @@ INSERT INTO `wp_usermeta` VALUES
 (24,1,"meta-box-order_event","a:3:{s:4:\"side\";s:9:\"submitdiv\";s:6:\"normal\";s:30:\"postexcerpt,postcustom,slugdiv\";s:8:\"advanced\";s:0:\"\";}"),
 (25,1,"screen_layout_event","2"),
 (26,1,"closedpostboxes_event","a:0:{}"),
-(27,1,"metaboxhidden_event","a:1:{i:0;s:7:\"slugdiv\";}");
+(27,1,"metaboxhidden_event","a:1:{i:0;s:7:\"slugdiv\";}"),
+(28,1,"wp_user-settings","libraryContent=browse"),
+(29,1,"wp_user-settings-time","1511960165"),
+(30,1,"closedpostboxes_acf","a:0:{}"),
+(31,1,"metaboxhidden_acf","a:1:{i:0;s:7:\"slugdiv\";}");

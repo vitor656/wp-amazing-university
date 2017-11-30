@@ -10559,11 +10559,18 @@ var Search = function () {
     function Search() {
         _classCallCheck(this, Search);
 
+        this.addSearchHTML();
+
+        this.resultsDiv = (0, _jquery2.default)("#search-overlay__results");
         this.openButton = (0, _jquery2.default)(".js-search-trigger");
         this.closeButton = (0, _jquery2.default)(".search-overlay__close");
         this.searchOverlay = (0, _jquery2.default)(".search-overlay");
+        this.searchField = (0, _jquery2.default)('#search-term');
         this.events();
         this.isOverlayOpen = false;
+        this.isSpinnerVisible = false;
+        this.previousValue;
+        this.typingTimer;
     }
 
     //Events
@@ -10574,15 +10581,53 @@ var Search = function () {
         value: function events() {
             this.openButton.on("click", this.openOverlay.bind(this));
             this.closeButton.on("click", this.closeOverlay.bind(this));
-            (0, _jquery2.default)(document).on("keyup", this.keyPressDispatcher.bind(this));
+            (0, _jquery2.default)(document).on("keydown", this.keyPressDispatcher.bind(this));
+
+            this.searchField.on("keyup", this.typingLogic.bind(this));
         }
 
         //Methods
 
     }, {
+        key: "typingLogic",
+        value: function typingLogic() {
+            if (this.searchField.val() != this.previousValue) {
+                clearTimeout(this.typingTimer);
+
+                if (this.searchField.val()) {
+                    if (!this.isSpinnerVisible) {
+                        this.resultsDiv.html('<div class="spinner-loader"></div>');
+                        this.isSpinnerVisible = true;
+                    }
+
+                    this.typingTimer = setTimeout(this.getResults.bind(this), 750);
+                } else {
+                    this.resultsDiv.html('');
+                    this.isSpinnerVisible = false;
+                }
+            }
+
+            this.previousValue = this.searchField.val();
+        }
+    }, {
+        key: "getResults",
+        value: function getResults() {
+            var _this = this;
+
+            _jquery2.default.when(_jquery2.default.getJSON(universityData.root_url + '/wp-json/wp/v2/posts?search=' + this.searchField.val()), _jquery2.default.getJSON(universityData.root_url + '/wp-json/wp/v2/pages?search=' + this.searchField.val())).then(function (posts, pages) {
+                var combineResults = posts[0].concat(pages[0]);
+                _this.resultsDiv.html("\n                <h2 class=\"search-overlay__section-title\">General Information</h2>\n                " + (combineResults.length ? '<ul class="link-list min-list">' : '<p>No general information matches that search...</p>') + "\n                    " + combineResults.map(function (item) {
+                    return "<li><a href=\"" + item.link + "\">" + item.title.rendered + "</a></li>";
+                }).join('') + "\n                " + (combineResults.length ? '</ul>' : '') + "\n            ");
+                _this.isSpinnerVisible = false;
+            }, function () {
+                _this.resultsDiv.html('<p>Unexpected error, please try again.</p>');
+            });
+        }
+    }, {
         key: "keyPressDispatcher",
         value: function keyPressDispatcher(e) {
-            if (e.keyCode == 83 && !this.isOverlayOpen) {
+            if (e.keyCode == 83 && !this.isOverlayOpen && !(0, _jquery2.default)('input, textarea').is(':focus')) {
                 this.openOverlay();
             }
 
@@ -10593,8 +10638,14 @@ var Search = function () {
     }, {
         key: "openOverlay",
         value: function openOverlay() {
+            var _this2 = this;
+
             this.searchOverlay.addClass("search-overlay--active");
             (0, _jquery2.default)("body").addClass("body-no-scroll");
+            setTimeout(function () {
+                return _this2.searchField.focus();
+            }, 301);
+            this.searchField.val('');
             this.isOverlayOpen = true;
         }
     }, {
@@ -10603,6 +10654,11 @@ var Search = function () {
             this.searchOverlay.removeClass("search-overlay--active");
             (0, _jquery2.default)("body").removeClass("body-no-scroll");
             this.isOverlayOpen = false;
+        }
+    }, {
+        key: "addSearchHTML",
+        value: function addSearchHTML() {
+            (0, _jquery2.default)('body').append("  \n            <div class=\"search-overlay\">\n                <div class=\"search-overlay__top\">\n                    <div class=\"container\">\n                    <i class=\"fa fa-search search-overlay__icon\" aria-hidden=\"true\"></i>\n                    <input type=\"text\" class=\"search-term\" placeholder=\"What are you looking for?\" id=\"search-term\">  \n                    <i class=\"fa fa-window-close search-overlay__close\" aria-hidden=\"true\"></i>\n                    </div>\n                </div>   \n\n                <div class=\"container\">\n                    <div id=\"search-overlay__results\"></div>\n                </div>         \n            </div>\n        ");
         }
     }]);
 

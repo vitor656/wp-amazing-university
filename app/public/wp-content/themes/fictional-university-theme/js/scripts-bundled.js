@@ -10671,6 +10671,8 @@ var Search = function () {
             }, 301);
             this.searchField.val('');
             this.isOverlayOpen = true;
+
+            return false;
         }
     }, {
         key: "closeOverlay",

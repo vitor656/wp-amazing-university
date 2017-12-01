@@ -1,0 +1,533 @@
+[HTTP] Binding to address: :1080
+Creating API v1 with WebPath: 
+Creating API v2 with WebPath: 
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+Got message in APIv2 websocket channel
+[APIv2] BROADCAST /api/v2/websocket
+Got message in APIv1 event stream
+Sending content: {
+  "ID": "AHA4lbs_qTjqT-8KBvUABkD25USTc3QGJoobbWdQtZ4=@mailhog.example",
+  "From": {
+    "Relays": null,
+    "Mailbox": "www-data",
+    "Domain": "e2dd5a6d717f",
+    "Params": ""
+  },
+  "To": [
+    {
+      "Relays": null,
+      "Mailbox": "mailhog",
+      "Domain": "flywheel.local",
+      "Params": ""
+    }
+  ],
+  "Content": {
+    "Headers": {
+      "Content-Type": [
+        "text/plain; charset=UTF-8"
+      ],
+      "Date": [
+        "Fri, 1 Dec 2017 16:13:00 +0000"
+      ],
+      "From": [
+        "WordPress \u003cwordpress@amazing-university.local\u003e"
+      ],
+      "MIME-Version": [
+        "1.0"
+      ],
+      "Message-ID": [
+        "\u003cb605f49cb0756f3c5bbd499dab7d92fe@amazing-university.local\u003e"
+      ],
+      "Received": [
+        "from localhost by mailhog.example (MailHog)\r\n          id AHA4lbs_qTjqT-8KBvUABkD25USTc3QGJoobbWdQtZ4=@mailhog.example; Fri, 01 Dec 2017 16:13:00 +0000"
+      ],
+      "Return-Path": [
+        "\u003cwww-data@e2dd5a6d717f\u003e"
+      ],
+      "Subject": [
+        "[Amazing University] New User Registration"
+      ],
+      "To": [
+        "dev-email@flywheel.local"
+      ],
+      "X-Mailer": [
+        "PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)"
+      ],
+      "X-PHP-Originating-Script": [
+        "1000:class-phpmailer.php"
+      ]
+    },
+    "Body": "New user registration on your site Amazing University:\r\n\r\nUsername: custom_user_1\r\n\r\nEmail: vitor.rabelo.656@gmail.com\r\n",
+    "Size": 551,
+    "MIME": null
+  },
+  "Created": "2017-12-01T16:13:00.604317785Z",
+  "MIME": null,
+  "Raw": {
+    "From": "www-data@e2dd5a6d717f",
+    "To": [
+      "mailhog@flywheel.local"
+    ],
+    "Data": "To: dev-email@flywheel.local\r\nSubject: [Amazing University] New User Registration\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 1 Dec 2017 16:13:00 +0000\r\nFrom: WordPress \u003cwordpress@amazing-university.local\u003e\r\nMessage-ID: \u003cb605f49cb0756f3c5bbd499dab7d92fe@amazing-university.local\u003e\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nNew user registration on your site Amazing University:\r\n\r\nUsername: custom_user_1\r\n\r\nEmail: vitor.rabelo.656@gmail.com\r\n",
+    "Helo": "localhost"
+  }
+}
+
+[APIv1] BROADCAST /api/v1/events
+Got message in APIv2 websocket channel
+[APIv2] BROADCAST /api/v2/websocket
+Got message in APIv1 event stream
+Sending content: {
+  "ID": "vdVUWUKxmSRC3XT-5DOgUiOWCXy8-gGAbpCWbLBtuqA=@mailhog.example",
+  "From": {
+    "Relays": null,
+    "Mailbox": "www-data",
+    "Domain": "e2dd5a6d717f",
+    "Params": ""
+  },
+  "To": [
+    {
+      "Relays": null,
+      "Mailbox": "mailhog",
+      "Domain": "flywheel.local",
+      "Params": ""
+    }
+  ],
+  "Content": {
+    "Headers": {
+      "Content-Type": [
+        "text/plain; charset=UTF-8"
+      ],
+      "Date": [
+        "Fri, 1 Dec 2017 16:13:00 +0000"
+      ],
+      "From": [
+        "WordPress \u003cwordpress@amazing-university.local\u003e"
+      ],
+      "MIME-Version": [
+        "1.0"
+      ],
+      "Message-ID": [
+        "\u003c563944e9092d3f2ed536f7b43738c8f0@amazing-university.local\u003e"
+      ],
+      "Received": [
+        "from localhost by mailhog.example (MailHog)\r\n          id vdVUWUKxmSRC3XT-5DOgUiOWCXy8-gGAbpCWbLBtuqA=@mailhog.example; Fri, 01 Dec 2017 16:13:00 +0000"
+      ],
+      "Return-Path": [
+        "\u003cwww-data@e2dd5a6d717f\u003e"
+      ],
+      "Subject": [
+        "[Amazing University] Your username and password info"
+      ],
+      "To": [
+        "vitor.rabelo.656@gmail.com"
+      ],
+      "X-Mailer": [
+        "PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)"
+      ],
+      "X-PHP-Originating-Script": [
+        "1000:class-phpmailer.php"
+      ]
+    },
+    "Body": "Username: custom_user_1\r\n\r\nTo set your password, visit the following address:\r\n\r\n\u003chttp://amazing-university.local/wp-login.php?action=rp\u0026key=rHy8z3OtRxcqFYmiIlhg\u0026login=custom_user_1\u003e\r\n\r\nhttp://amazing-university.local/wp-login.php\r\n",
+    "Size": 675,
+    "MIME": null
+  },
+  "Created": "2017-12-01T16:13:00.619289871Z",
+  "MIME": null,
+  "Raw": {
+    "From": "www-data@e2dd5a6d717f",
+    "To": [
+      "mailhog@flywheel.local"
+    ],
+    "Data": "To: vitor.rabelo.656@gmail.com\r\nSubject: [Amazing University] Your username and password info\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 1 Dec 2017 16:13:00 +0000\r\nFrom: WordPress \u003cwordpress@amazing-university.local\u003e\r\nMessage-ID: \u003c563944e9092d3f2ed536f7b43738c8f0@amazing-university.local\u003e\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nUsername: custom_user_1\r\n\r\nTo set your password, visit the following address:\r\n\r\n\u003chttp://amazing-university.local/wp-login.php?action=rp\u0026key=rHy8z3OtRxcqFYmiIlhg\u0026login=custom_user_1\u003e\r\n\r\nhttp://amazing-university.local/wp-login.php\r\n",
+    "Helo": "localhost"
+  }
+}
+
+[APIv1] BROADCAST /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+Got message in APIv2 websocket channel
+[APIv2] BROADCAST /api/v2/websocket
+Got message in APIv1 event stream
+Sending content: {
+  "ID": "0hkN8xi0dAuYBYBfFT1CEPjqyReBBRdCESDHlhMycJk=@mailhog.example",
+  "From": {
+    "Relays": null,
+    "Mailbox": "www-data",
+    "Domain": "e2dd5a6d717f",
+    "Params": ""
+  },
+  "To": [
+    {
+      "Relays": null,
+      "Mailbox": "mailhog",
+      "Domain": "flywheel.local",
+      "Params": ""
+    }
+  ],
+  "Content": {
+    "Headers": {
+      "Content-Type": [
+        "text/plain; charset=UTF-8"
+      ],
+      "Date": [
+        "Fri, 1 Dec 2017 16:14:19 +0000"
+      ],
+      "From": [
+        "WordPress \u003cwordpress@amazing-university.local\u003e"
+      ],
+      "MIME-Version": [
+        "1.0"
+      ],
+      "Message-ID": [
+        "\u003c0b4a1bfe07a969287fd369d9130c45b3@amazing-university.local\u003e"
+      ],
+      "Received": [
+        "from localhost by mailhog.example (MailHog)\r\n          id 0hkN8xi0dAuYBYBfFT1CEPjqyReBBRdCESDHlhMycJk=@mailhog.example; Fri, 01 Dec 2017 16:14:19 +0000"
+      ],
+      "Return-Path": [
+        "\u003cwww-data@e2dd5a6d717f\u003e"
+      ],
+      "Subject": [
+        "[Amazing University] Notice of Email Change"
+      ],
+      "To": [
+        "vitor.rabelo.656@gmail.com"
+      ],
+      "X-Mailer": [
+        "PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)"
+      ],
+      "X-PHP-Originating-Script": [
+        "1000:class-phpmailer.php"
+      ]
+    },
+    "Body": "Hi custom_user_1,\r\n\r\nThis notice confirms that your email address on Amazing University was changed to custom_user@email.com.\r\n\r\nIf you did not change your email, please contact the Site Administrator at\r\ndev-email@flywheel.local\r\n\r\nThis email has been sent to vitor.rabelo.656@gmail.com\r\n\r\nRegards,\r\nAll at Amazing University\r\nhttp://amazing-university.local\r\n",
+    "Size": 795,
+    "MIME": null
+  },
+  "Created": "2017-12-01T16:14:19.771668041Z",
+  "MIME": null,
+  "Raw": {
+    "From": "www-data@e2dd5a6d717f",
+    "To": [
+      "mailhog@flywheel.local"
+    ],
+    "Data": "To: vitor.rabelo.656@gmail.com\r\nSubject: [Amazing University] Notice of Email Change\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 1 Dec 2017 16:14:19 +0000\r\nFrom: WordPress \u003cwordpress@amazing-university.local\u003e\r\nMessage-ID: \u003c0b4a1bfe07a969287fd369d9130c45b3@amazing-university.local\u003e\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nHi custom_user_1,\r\n\r\nThis notice confirms that your email address on Amazing University was changed to custom_user@email.com.\r\n\r\nIf you did not change your email, please contact the Site Administrator at\r\ndev-email@flywheel.local\r\n\r\nThis email has been sent to vitor.rabelo.656@gmail.com\r\n\r\nRegards,\r\nAll at Amazing University\r\nhttp://amazing-university.local\r\n",
+    "Helo": "localhost"
+  }
+}
+
+[APIv1] BROADCAST /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+Got message in APIv2 websocket channel
+[APIv2] BROADCAST /api/v2/websocket
+Got message in APIv1 event stream
+Sending content: {
+  "ID": "MDoQvOJicrMIG239DVNxiVTrRP7-cqOpU3-SrGxw9RI=@mailhog.example",
+  "From": {
+    "Relays": null,
+    "Mailbox": "www-data",
+    "Domain": "e2dd5a6d717f",
+    "Params": ""
+  },
+  "To": [
+    {
+      "Relays": null,
+      "Mailbox": "mailhog",
+      "Domain": "flywheel.local",
+      "Params": ""
+    }
+  ],
+  "Content": {
+    "Headers": {
+      "Content-Type": [
+        "text/plain; charset=UTF-8"
+      ],
+      "Date": [
+        "Fri, 1 Dec 2017 16:42:29 +0000"
+      ],
+      "From": [
+        "WordPress \u003cwordpress@amazing-university.local\u003e"
+      ],
+      "MIME-Version": [
+        "1.0"
+      ],
+      "Message-ID": [
+        "\u003c4281fca678c559596aa37b103b052e95@amazing-university.local\u003e"
+      ],
+      "Received": [
+        "from localhost by mailhog.example (MailHog)\r\n          id MDoQvOJicrMIG239DVNxiVTrRP7-cqOpU3-SrGxw9RI=@mailhog.example; Fri, 01 Dec 2017 16:42:29 +0000"
+      ],
+      "Return-Path": [
+        "\u003cwww-data@e2dd5a6d717f\u003e"
+      ],
+      "Subject": [
+        "[Amazing University] New User Registration"
+      ],
+      "To": [
+        "dev-email@flywheel.local"
+      ],
+      "X-Mailer": [
+        "PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)"
+      ],
+      "X-PHP-Originating-Script": [
+        "1000:class-phpmailer.php"
+      ]
+    },
+    "Body": "New user registration on your site Amazing University:\r\n\r\nUsername: ck656\r\n\r\nEmail: vitor.rabelo.656@gmail.com\r\n",
+    "Size": 543,
+    "MIME": null
+  },
+  "Created": "2017-12-01T16:42:29.752752146Z",
+  "MIME": null,
+  "Raw": {
+    "From": "www-data@e2dd5a6d717f",
+    "To": [
+      "mailhog@flywheel.local"
+    ],
+    "Data": "To: dev-email@flywheel.local\r\nSubject: [Amazing University] New User Registration\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 1 Dec 2017 16:42:29 +0000\r\nFrom: WordPress \u003cwordpress@amazing-university.local\u003e\r\nMessage-ID: \u003c4281fca678c559596aa37b103b052e95@amazing-university.local\u003e\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nNew user registration on your site Amazing University:\r\n\r\nUsername: ck656\r\n\r\nEmail: vitor.rabelo.656@gmail.com\r\n",
+    "Helo": "localhost"
+  }
+}
+
+[APIv1] BROADCAST /api/v1/events
+Got message in APIv2 websocket channel
+[APIv2] BROADCAST /api/v2/websocket
+Got message in APIv1 event stream
+Sending content: {
+  "ID": "69aOvoSdqIhqpE2KgOK0fvKzITYVkRqw48JjXZMKtuk=@mailhog.example",
+  "From": {
+    "Relays": null,
+    "Mailbox": "www-data",
+    "Domain": "e2dd5a6d717f",
+    "Params": ""
+  },
+  "To": [
+    {
+      "Relays": null,
+      "Mailbox": "mailhog",
+      "Domain": "flywheel.local",
+      "Params": ""
+    }
+  ],
+  "Content": {
+    "Headers": {
+      "Content-Type": [
+        "text/plain; charset=UTF-8"
+      ],
+      "Date": [
+        "Fri, 1 Dec 2017 16:42:29 +0000"
+      ],
+      "From": [
+        "WordPress \u003cwordpress@amazing-university.local\u003e"
+      ],
+      "MIME-Version": [
+        "1.0"
+      ],
+      "Message-ID": [
+        "\u003c0e3fbc6a03f774996270f9dc42ec905d@amazing-university.local\u003e"
+      ],
+      "Received": [
+        "from localhost by mailhog.example (MailHog)\r\n          id 69aOvoSdqIhqpE2KgOK0fvKzITYVkRqw48JjXZMKtuk=@mailhog.example; Fri, 01 Dec 2017 16:42:29 +0000"
+      ],
+      "Return-Path": [
+        "\u003cwww-data@e2dd5a6d717f\u003e"
+      ],
+      "Subject": [
+        "[Amazing University] Your username and password info"
+      ],
+      "To": [
+        "vitor.rabelo.656@gmail.com"
+      ],
+      "X-Mailer": [
+        "PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)"
+      ],
+      "X-PHP-Originating-Script": [
+        "1000:class-phpmailer.php"
+      ]
+    },
+    "Body": "Username: ck656\r\n\r\nTo set your password, visit the following address:\r\n\r\n\u003chttp://amazing-university.local/wp-login.php?action=rp\u0026key=UOqkgolvzpSOM4BIpw1B\u0026login=ck656\u003e\r\n\r\nhttp://amazing-university.local/wp-login.php\r\n",
+    "Size": 659,
+    "MIME": null
+  },
+  "Created": "2017-12-01T16:42:29.765540492Z",
+  "MIME": null,
+  "Raw": {
+    "From": "www-data@e2dd5a6d717f",
+    "To": [
+      "mailhog@flywheel.local"
+    ],
+    "Data": "To: vitor.rabelo.656@gmail.com\r\nSubject: [Amazing University] Your username and password info\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 1 Dec 2017 16:42:29 +0000\r\nFrom: WordPress \u003cwordpress@amazing-university.local\u003e\r\nMessage-ID: \u003c0e3fbc6a03f774996270f9dc42ec905d@amazing-university.local\u003e\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nUsername: ck656\r\n\r\nTo set your password, visit the following address:\r\n\r\n\u003chttp://amazing-university.local/wp-login.php?action=rp\u0026key=UOqkgolvzpSOM4BIpw1B\u0026login=ck656\u003e\r\n\r\nhttp://amazing-university.local/wp-login.php\r\n",
+    "Helo": "localhost"
+  }
+}
+
+[APIv1] BROADCAST /api/v1/events
+Got message in APIv2 websocket channel
+[APIv2] BROADCAST /api/v2/websocket
+Got message in APIv1 event stream
+Sending content: {
+  "ID": "xRRW7Brb7VnvjqG1EC3H-9GdqtJvo3BQDE2_yUXNJoM=@mailhog.example",
+  "From": {
+    "Relays": null,
+    "Mailbox": "www-data",
+    "Domain": "e2dd5a6d717f",
+    "Params": ""
+  },
+  "To": [
+    {
+      "Relays": null,
+      "Mailbox": "mailhog",
+      "Domain": "flywheel.local",
+      "Params": ""
+    }
+  ],
+  "Content": {
+    "Headers": {
+      "Content-Type": [
+        "text/plain; charset=UTF-8"
+      ],
+      "Date": [
+        "Fri, 1 Dec 2017 16:43:02 +0000"
+      ],
+      "From": [
+        "WordPress \u003cwordpress@amazing-university.local\u003e"
+      ],
+      "MIME-Version": [
+        "1.0"
+      ],
+      "Message-ID": [
+        "\u003c8ac2427efef12d93465cdfdda9cc82fc@amazing-university.local\u003e"
+      ],
+      "Received": [
+        "from localhost by mailhog.example (MailHog)\r\n          id xRRW7Brb7VnvjqG1EC3H-9GdqtJvo3BQDE2_yUXNJoM=@mailhog.example; Fri, 01 Dec 2017 16:43:02 +0000"
+      ],
+      "Return-Path": [
+        "\u003cwww-data@e2dd5a6d717f\u003e"
+      ],
+      "Subject": [
+        "[Amazing University] Notice of Password Change"
+      ],
+      "To": [
+        "vitor.rabelo.656@gmail.com"
+      ],
+      "X-Mailer": [
+        "PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)"
+      ],
+      "X-PHP-Originating-Script": [
+        "1000:class-phpmailer.php"
+      ]
+    },
+    "Body": "Hi ck656,\r\n\r\nThis notice confirms that your password was changed on Amazing University.\r\n\r\nIf you did not change your password, please contact the Site Administrator at\r\ndev-email@flywheel.local\r\n\r\nThis email has been sent to vitor.rabelo.656@gmail.com\r\n\r\nRegards,\r\nAll at Amazing University\r\nhttp://amazing-university.local\r\n",
+    "Size": 763,
+    "MIME": null
+  },
+  "Created": "2017-12-01T16:43:02.932711578Z",
+  "MIME": null,
+  "Raw": {
+    "From": "www-data@e2dd5a6d717f",
+    "To": [
+      "mailhog@flywheel.local"
+    ],
+    "Data": "To: vitor.rabelo.656@gmail.com\r\nSubject: [Amazing University] Notice of Password Change\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 1 Dec 2017 16:43:02 +0000\r\nFrom: WordPress \u003cwordpress@amazing-university.local\u003e\r\nMessage-ID: \u003c8ac2427efef12d93465cdfdda9cc82fc@amazing-university.local\u003e\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nHi ck656,\r\n\r\nThis notice confirms that your password was changed on Amazing University.\r\n\r\nIf you did not change your password, please contact the Site Administrator at\r\ndev-email@flywheel.local\r\n\r\nThis email has been sent to vitor.rabelo.656@gmail.com\r\n\r\nRegards,\r\nAll at Amazing University\r\nhttp://amazing-university.local\r\n",
+    "Helo": "localhost"
+  }
+}
+
+[APIv1] BROADCAST /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events

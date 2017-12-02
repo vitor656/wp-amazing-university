@@ -45,6 +45,10 @@ function university_custom_rest(){
     register_rest_field('post', 'authorName', array(
         'get_callback' => function(){ return get_the_author(); }
     ));
+
+    register_rest_field('note', 'userNoteCount', array(
+        'get_callback' => function(){ return count_user_posts( get_current_user_id(), 'note'); }
+    ));
 }
 add_action( 'rest_api_init', 'university_custom_rest' );
 
@@ -57,7 +61,9 @@ function university_files(){
     wp_enqueue_style( 'university_main_styles', get_stylesheet_uri());
 
     wp_localize_script( 'main_university_js', 'universityData', array(
-        'root_url' => get_site_url()
+        'root_url' => get_site_url(),
+        //IMPORTANT FOR AJAX REQUESTS
+        'nonce' => wp_create_nonce( 'wp_rest' )
     ));
 }
 
@@ -134,6 +140,25 @@ function loginTitle(){
     return get_blogInfo('name');
 }
 
+function makeNotePrivate($data, $postarr){
+    if($data['post_type'] == 'note'){
+
+        if(count_user_posts( get_current_user_id(), 'note') > 4 AND !$postarr['ID']){
+            die("note_limit_error");
+        }
+
+        //For security, so possible malicious code that the user tries to insert will be deleted from the text.
+        $data['post_content'] = sanitize_textarea_field($data['post_content']);
+        $data['post_title'] = sanitize_text_field($data['post_title']);
+    }
+
+    if($data['post_type'] == 'note' AND $data['post_status'] != 'trash'){
+        $data['post_status'] = 'private';
+    }
+    
+    return $data;
+}
+
 add_action('wp_enqueue_scripts', 'university_files');
 add_action( 'after_setup_theme', 'university_features');
 add_action('pre_get_posts', 'university_adjust_queries');
@@ -154,3 +179,6 @@ add_action('login_enqueue_scripts', 'loginCSS');
 
 //Change name of main title in Login Screen
 add_filter('login_headertitle', 'loginTitle');
+
+//Force note posts to be private
+add_filter('wp_insert_post_data', 'makeNotePrivate', 10, 2 /*Can handle 2 parameters*/ );

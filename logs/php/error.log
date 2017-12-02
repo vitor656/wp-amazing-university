@@ -201,3 +201,6 @@ Stack trace:
 #8 /app/public/wp-includes/functions.php(960): WP->main('')
 #9 /app/public/wp-blog-header.php(16): wp()
 #10 /app/public/index.php(17): require in /app/public/wp-content/themes/fictional-university-theme/includes/search-route.php on line 52
+[02-Dec-2017 19:34:55 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 142
+[02-Dec-2017 19:40:32 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 142
+[02-Dec-2017 19:46:32 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 142
